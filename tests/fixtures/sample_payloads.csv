@@ -1,0 +1,6 @@
+payload,label
+hello world,cleartext
+%3Cscript%3Ealert(1)%3C/script%3E,url_encoded
+&lt;script&gt;alert(1)&lt;/script&gt;,html_entities
+\u003Cscript\u003E,unicode_escapes
+PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==,base64_like

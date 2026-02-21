@@ -1,0 +1,7 @@
+[
+  {"payload": "hello world"},
+  {"payload": "%3Cscript%3Ealert(1)%3C/script%3E"},
+  {"payload": "&lt;div&gt;test&lt;/div&gt;"},
+  {"payload": "\\u003Ctest\\u003E"},
+  {"payload": "simple cleartext string"}
+]
