@@ -2,12 +2,87 @@
 
 Security payload corpus management CLI tool. Normalize storage, detect encoding patterns, classify payloads, cluster duplicates, and generate deterministic reports.
 
+## Requirements
+
+- **Python 3.9+** (check with `python3 --version`)
+- **pip** (check with `pip3 --version`)
+- **git** (to clone the repository)
+
 ## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/muhammetuslu78/corpuslab.git
+cd corpuslab
+```
+
+### 2. Create a virtual environment
 
 ```bash
 python3 -m venv .venv
+```
+
+Activate it:
+
+```bash
+# macOS / Linux
 source .venv/bin/activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Windows (CMD)
+.venv\Scripts\activate.bat
+```
+
+You should see `(.venv)` at the beginning of your terminal prompt.
+
+### 3. Install CorpusLab
+
+For regular usage:
+
+```bash
+pip install -e .
+```
+
+For development (includes pytest, ruff, mypy):
+
+```bash
 pip install -e ".[dev]"
+```
+
+### 4. Verify the installation
+
+```bash
+corpuslab --version
+# Expected output: corpuslab, version 0.1.0
+```
+
+Or run with the Python module syntax:
+
+```bash
+python -m corpuslab --version
+```
+
+### 5. (Optional) Run the test suite
+
+```bash
+pytest tests/ -v
+# Expected: 128 passed
+```
+
+### Uninstall
+
+```bash
+pip uninstall corpuslab
+```
+
+To also remove the virtual environment:
+
+```bash
+deactivate
+rm -rf .venv
 ```
 
 ## Quick Start
